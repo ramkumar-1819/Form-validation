@@ -1,0 +1,19 @@
+form{
+    margin: auto;                /*Dispalying the form into center of the page and background color as blue*/
+    background-color:blue;
+    text-align:center;
+    width:600px;
+  }
+form{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+  input{
+    width:300px;
+    margin:2%;
+  }
+  #sm{
+      width: 100px;
+  }
