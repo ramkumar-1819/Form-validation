@@ -7,23 +7,35 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+  <h2>REG_EXP validation</h2>
+    <div class="container"><!--Hold all elements-->
     <form name="formss" action="/"onsubmit="return myfun()"> <!--creating form-->
-      <p>UserName:<input type="text" name="username"></p><!--UserName Input-->
-        <label class="alert" id="name"></label>
-          
-      <p>address:<input type="text" name="address"></p><!--Adrress Input-->
-        <label class="alert" id="addrs"></label>
-          
-      <p>Gmail:<input type="text" name="maill"></p><!--Mail Input-->
-        <label class="alert" id="mails"></label>
-
-      <p>Password:<input type=text" name="password"></p><!--Password Input-->
-         <lablel class="alert" id="pass"></lablel>
-      <p>Phone Number:<input type="text" id="phno"></p><!--PhoneNumber Input-->
-         <label class="alert" id="phone"></label>
-
-      <p><input type="submit" id="sm"></p><!--Submit Button-->
+      
+      <label for="usname">USERNAME:</label>
+      <input type="text" id="usname" name="username"><!--UserName Input-->
+      <label class="alert" id="name"></label>
+      
+      <label for="ads">ADDRESS:</label>
+      <input type="text" id="ads" name="address"><!--Adrress Input-->
+      <label class="alert" id="addrs"></label>
+     
+      <label for="ml">MAIL:</label>
+      <input type="text" id="ml" name="maill"><!--Mail Input-->
+      <label class="alert" id="mails"></label>
+     
+      <label for="pwd">PASSWORD:</label>
+      <input type="text" name="password" id="pwd"><!--Password Input-->
+      <label class="alert" id="pass"></label>
+      
+      <label for="phno">PHONE NUMBER:</label>
+      <input type="text" name="phonenumber" id="phno"><!--PhoneNumber Input-->
+      <label class="alert" id="phone"></label>
+      
+      <input type="submit" id="sm"><!--Submit Button-->
     </form>
+    <div id="res"></div><!--Display successfully message when form is filled successfully-->
+    </div>
+    
     <script src="./app.js"></script>
   </body>
         
